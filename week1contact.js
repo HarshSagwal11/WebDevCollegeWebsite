@@ -1,6 +1,6 @@
 // form validation
 $(document).ready(function () {
-  $("#contactForm").submit(function (e) {
+  $("#contactform").submit(function (e) {
     e.preventDefault();
 
     function validateForm() {
