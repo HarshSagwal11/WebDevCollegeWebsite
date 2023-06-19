@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Ram Engineering College</title>
+    <style>
+      body{
+        background-color:rgb(162, 162, 162);
+        background-image:url(./projectimages/background.jpg);
+        background-size:cover;
+      }
+      .containertop{
+        display: flex;
+        background-color: brown;
+       border-radius: 10px;
+        
+      }
+      .containertop>img{
+        padding: 10px;
+      }
+      .containertop >p{
+        padding:10px;
+        font-size: 20px;
+        
+        color:beige;
+        padding-left: 10px;
+      }
+      .navigationbar{
+        display: flex;
+        background-color:#2B2A4C;
+        padding: 15px;
+        gap:30px;
+        color:white;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        
+        
+      }
+      .navigationbar>a{
+        color:beige;
+        text-decoration: none;
+      }
+      .herobanner{
+        background-image: url(./projectimages/campus1.jpg);
+        background-size:cover;
+        background-position: center;
+        height: 400px;
+        text-align: center;
+         margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+     
+      margin-top: 30px;
+      
+      }
+      .herobanner >h3{
+        color: black;
+        margin-left: auto;
+         
+      }
+      .herobanner>h3>a{
+        color: beige;
+        text-decoration: none;
+      
+        background-color: brown;
+        border: 2px solid white;
+      }
+      .stats{
+        display: flex;
+        flex-direction: column;
+        color: beige;
+        background-color: #2B2A4C;
+        margin-top: 50px;
+        padding: 5px;
+      }
+      .stats>h2{
+        color: beige;
+        text-align: center;
+      }
+      .stats>table{
+        text-align: center;
+        border: 2px solid beige;
+        padding: 10px;
+         padding:20px;
+      }
+    /*  .campustourhead{
+        text-align: center;
+        margin: 50px;
+        background-color: #2B2A4C;
+        color: brown;
+        padding: 20px;
+
+       } 
+         .campustour{
+        display: flex;
+        flex-direction: row;
+       gap: 10px;
+        flex-wrap: wrap;
+        size: cover;
+        
+      }
+        
+      .campusimages{
+        text-align: center;
+        border: 2px solid black;
+        margin:auto;
+    
+      } */
+      
+/* ///////////////////////////// */
+.image-grid {
+  display: grid;
+  display: inline-grid;;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.social{
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.socialHeading{
+    font-family: sans-serif;
+}
+.handles a img{
+   
+  width: 50px;
+  height: 50px;
+}
+.insta :hover{
+    animation: handlesAnimate 2s ease-out infinite;
+  
+}
+.facebook :hover{
+    animation: handlesAnimate 2s ease-out infinite;
+  
+}
+.twitter :hover{
+    animation: handlesAnimate 2s ease-out infinite;
+  
+}
+@keyframes handlesAnimate {
+    0%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1.5;
+    }
+}
+    </style>
+
+    <script>
+       
+    $('.navigationbar').on('click', function () {
+        $('.list1').slideToggle();
+    });
+    </script>
+</head>
+<body>
+  <div class="navigationbar">
+  <a href="./zproject.html">Home</a>
+  <a href="./week1about.html">About</a>
+  <a href="./week1courses.html">Courses</a>
+  <a href="./week1admissions.html">Admissions</a>
+  <a href="./week1contact.html">Contact</a>
+  <a >
+    Search:<input type="text">
+  </a>
+</div>
+    
+       <div class="containertop">
+       <img src="./projectimages/collegelogo.jpg"  id="logo" height="100px">
+       
+       
+       <P>Shri Ram Engineering College <br>
+         Chandigarh,India<br>
+         Since 1955</p>
+    </div>
+<!--  <div class="navigationbar">
+        <a href="./week1project.html">Home</a>
+        <a href="./week1about.html">About</a>
+        <a href="./week1courses.html">Courses</a>
+        <a href="./week1admissions.html">Admissions</a>
+        <a href="./week1contact.html">Contact</a>
+        <a>
+          Search:<input type="text">
+        </a>
+    </div> -->
+   
+    <div class="herobanner">
+      
+      <h3>Its all starts with the like minded.<br>
+        <a href="./week1admissions.html">Choose your Stream
+        </a>
+      </h3>
+    </div>
+  </header>
+
+  <h2 class="campustourhead">Campus Tour</h2>
+
+  <div class="image-grid">
+    <ul>
+    <img src="./projectimages/campus1.jpg">
+    <img src="./projectimages/campus2.jpg">
+    <img src="./projectimages/campus3.jpg">
+    <img src="./projectimages/campus4.jpg">
+    <img src="./projectimages/campus5.jpg">
+    <img src="./projectimages/campus6.jpg">
+    <img src="./projectimages/campus7.jpg">
+    <img src="./projectimages/campus8.jpg">
+    <img src="./projectimages/campus9.jpg">
+    <img src="./projectimages/campus10.jpg">
+  </div>
+</ul>
+<div class="social">
+  <h3 class="socialHeading">
+      Connect with us on social media
+  </h3>
+  <div class="handles">
+
+      <a href="instagram.com" class="insta"><img src="./projectimages/insta.jpeg" alt=""></a>
+      <a href="facebook.com" class="facebook"><img src="./projectimages/facebook.jpeg" alt=""></a>
+      <a href="twitter.com" class="twitter"><img src="./projectimages/twitter.png" alt=""></a>
+  </div>
+</div>
+
+  
+  <div class="stats">
+    <h2>Our Stats For Last 10 Years</h2>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Enrollment</th>
+        <th>Graduates</th>
+        <th>Employment Rate</th>
+        <th>Publications</th>
+        
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>1000</td>
+        <td>500</td>
+        <td>85%</td>
+        <td>50</td>
+        
+      </tr>
+      <tr>
+        <td>2019</td>
+        <td>1200</td>
+        <td>600</td>
+        <td>90%</td>
+        <td>60</td>
+        
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>1500</td>
+        <td>700</td>
+        <td>92%</td>
+        <td>70</td>
+        
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>1800</td>
+        <td>800</td>
+        <td>95%</td>
+        <td>80</td>
+       
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>2000</td>
+        <td>900</td>
+        <td>96%</td>
+        <td>90</td>
+       
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>2200</td>
+        <td>1000</td>
+        <td>98%</td>
+        <td>100</td>
+      
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>2400</td>
+        <td>1100</td>
+        <td>95%</td>
+        <td>110</td>
+        
+      </tr>
+      <tr>
+        <td>2025</td>
+        <td>2600</td>
+        <td>1200</td>
+        <td>92%</td>
+        <td>120</td>
+        
+      </tr>
+      <tr>
+        <td>2026</td>
+        <td>2800</td>
+        <td>1300</td>
+        <td>90%</td>
+        <td>130</td>
+        
+      </tr>
+      <tr>
+        <td>2027</td>
+        <td>3000</td>
+        <td>1400</td>
+        <td>88%</td>
+        <td>140</td>
+        
+      </tr>
+      <tr>
+        <td>2028</td>
+        <td>3200</td>
+        <td>1500</td>
+        <td>87%</td>
+        <td>150</td>
+        
+      </tr
+      </table>
+  
+  </div>
+ 
+
+
+</body>
+</html>

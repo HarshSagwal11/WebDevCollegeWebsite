@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us - Shri Ram Engineering College</title>
+  <script src="./week1contact.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+  <style>
+    #heading {
+      background-color: brown;
+      color: beige;
+      padding: 10px;
+      text-align: center;
+    }
+
+    body {
+      background-color: #2b2a4c;
+    }
+
+    p {
+      color: #ea906c;
+      position: static;
+      font-size: large;
+    }
+
+    h2 {
+      color: beige;
+    }
+
+    form {
+      padding: 10px;
+      color: #ea906c;
+    }
+
+    #name {
+      margin: 10px;
+      padding: 4px;
+    }
+
+    #email {
+      margin: 10px;
+      padding: 4px;
+    }
+
+    #subject {
+      margin: 10px;
+      padding: 4px;
+    }
+
+    #message {
+      margin: 10px;
+      padding: 4px;
+    }
+
+    #submit {
+      margin: 10px 10px 10px 70px;
+      padding: 4px;
+      background-color: brown;
+      color: beige;
+    }
+
+    a {
+      position: absolute;
+      background-color: brown;
+      text-decoration: none;
+      color: beige;
+      padding: 7px;
+      margin: 10px 0px 0px 20px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>Contact Us</h1>
+    <h2>Shri Ram Engineering College</h2>
+  </div>
+  <hr />
+  <p>
+    Address: 420, Sector 47, Chandigarh, India<br />
+    Email: info@srec.edu<br />
+    Phone: +91 1234567890<br />
+    Post Office <Number:160047></Number:160047>
+  </p>
+
+  <h2>Send us a Query or Feedback</h2>
+  <form action="https://formsubmit.co/harshsagwalkaul@gmail.com" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Emaiil" /><br />
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" /><br />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br />
+
+    <label for="applied">Previously appplied</label>
+    <input type="checkbox" id="applied" /><br />
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+  <hr />
+  <a href="./zproject.html">Home</a>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function SendEmail(){
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "harshsagwalkaul@gmail.com",
+        Password: "1BB9DB7423535AA8086845399290BFA62B89",
+        To: "harshsagwalkaul@gmail.com",
+        From: document.getElementById("Email").value,
+        Subject: document.getElementById("Subject").value,
+        Body: document.getElementById("Message").value,
+      }).then((message) => alert(message));
+    }
+  </script> -->
+</body>
+
+</html>

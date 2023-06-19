@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color:#2B2A4C;
+      }
+
+      h1{
+        text-align: center;
+        color: beige;
+        background-color: brown;
+        padding: 20px;
+      }
+      p{
+        color: #EA906C;
+        margin: 20px;
+        font-size: large;
+      }
+      a{
+        background-color: brown;
+        color: beige;
+        padding: 7px;
+        text-decoration: none;
+        border:2px solid white;
+        position: absolute;
+        margin-top: 10px;
+
+      }
+      #bgchange{
+        background-color: purple;
+        margin-top: 50px;
+        color: #2B2A4C;
+        border: 2px solid beige;
+        position: end;
+        padding: 7px;
+        
+      }
+    </style>
+    <script>
+      // JavaScript code for DOM manipulation
+      document.addEventListener("DOMContentLoaded", function() {
+        var link = document.querySelector("button");
+
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          document.body.style.backgroundColor = getRandomColor();
+        });
+
+        function getRandomColor() {
+          var letters = "0123456789ABCDEF";
+          var color = "#";
+          for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+      });
+    </script>
+</head>
+<body>
+    <h1>About Shri Ram Engineering College</h1>
+    <p>
+      Shri Ram Engineering College, established in 1955, is a prestigious educational institution located in Chandigarh, India. With a rich history of over six decades, the college has been a pioneering force in the field of engineering education, consistently delivering excellence in academics, research, and industry collaboration. It is currently ranked as one of the top ten engineering colleges in the country, a testament to its commitment to quality education and exceptional faculty.
+      </p>
+      <p>The college offers a wide range of undergraduate and postgraduate programs in various disciplines, including Electronics and Communication Engineering (ECE), Computer Science (CS), Information Technology (IT), Electrical and Electronics Engineering (EEE), Biotechnology, and Mechanical Engineering. These programs are designed to provide students with a strong foundation in theoretical knowledge and practical skills, enabling them to excel in their chosen fields.
+        </p>
+  
+        <P>
+      The college's state-of-the-art infrastructure includes well-equipped laboratories, advanced research facilities, and a comprehensive library, offering students the resources they need to excel in their academic pursuits. The campus provides a conducive environment for learning, with modern classrooms, seminar halls, and spaces for extracurricular activities.
+  
+      Over the years, Shri Ram Engineering College has produced numerous talented engineers who have excelled in their respective fields, contributing significantly to the development of society and the industry. The college's emphasis on practical learning, industry exposure, and research opportunities equips its students with the knowledge and skills necessary to thrive in the competitive global scenario.
+
+      In conclusion, Shri Ram Engineering College stands as a leading institution in the field of engineering education, offering comprehensive programs, exceptional faculty, and a conducive learning environment. Its commitment to excellence, industry collaborations, and emphasis on holistic development have earned it a reputation as one of the top engineering colleges in the country.
+    </p>
+    <hr>
+    <a href="./zproject.html">Home</a><br>
+    <button id="bgchange">Change Bg color</button>
+</body>
+</html>
