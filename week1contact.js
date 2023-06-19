@@ -7,7 +7,7 @@ $(document).ready(function () {
       var name = $("#name").val();
       var email = $("#email").val();
       var subject = $("#subject").val();
-      var applied = $("#applied").val();
+      
       var message = $("#message").val();
 
       if (
@@ -18,13 +18,13 @@ $(document).ready(function () {
         password2 === ""
       ) {
         alert("Please fill in all fields");
-        return;
+        
       }
 
       $("#name").val("");
       $("#Email").val("");
       $("#subject").val("");
-      $("#applied").val("");
+      
       $("#message").val("");
 
       alert("SignedUp Successfully!");

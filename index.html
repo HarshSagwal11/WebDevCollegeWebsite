@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shri Ram Engineering College</title>
     <style>
       body{
@@ -120,6 +121,7 @@
 .image-grid img {
   width: 100%;
   height: auto;
+  border: 3px solid pink;
 }
 
 .social{
@@ -160,13 +162,7 @@
 }
     </style>
 
-    <script>
-       
-    $('.navigationbar').on('click', function () {
-        $('.list1').slideToggle();
-    });
-    </script>
-</head>
+   
 <body>
   <div class="navigationbar">
   <a href="./zproject.html">Home</a>
@@ -340,6 +336,23 @@
   </div>
  
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Your existing JavaScript code
+      
+      // Add the following JavaScript code to apply the hover effect
+      $('.image-grid img').hover(
+        function() {
+          $(this).css('transform', 'scale(1.2)');
+        },
+        function() {
+          $(this).css('transform', 'scale(1)');
+        }
+      );
+    });
+  </script>
+ 
+</head>
 </body>
 </html>

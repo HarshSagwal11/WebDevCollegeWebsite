@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Contact Us - Shri Ram Engineering College</title>
-  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="week1contact.js"></script>
+    
   <style>
     #heading {
       background-color: brown;
@@ -87,7 +88,7 @@
   </p>
 
   <h2>Send us a Query or Feedback</h2>
-  <form id="contactForm"action="https://formsubmit.co/harshsagwalkaul@gmail.com" method="POST">
+  <form id="contactForm" action="/" >
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Your Name" /><br />
 
@@ -109,8 +110,25 @@
   </form>
   <hr />
   <a href="./index.html">Home</a>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
- 
+  
+  <script src="week1contact.js"></script>
+  <script>
+    // Function to validate the form fields
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || subject === '' || message === '') {
+        alert('Please fill in all the required fields.');
+        return false;
+      }
+    }
+
+    // Event listener to validate the form on submission
+    document.getElementById('contactForm').addEventListener('submit', validateForm);
+  </script>
    
 </body>
 
