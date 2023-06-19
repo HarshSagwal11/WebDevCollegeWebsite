@@ -1,5 +1,10 @@
 // form validation
+$(document).ready (function () {
 
+    $('submit').click(function (e) {
+        e.preventDefault();
+        validateForm();
+    });
 function validateForm() {
     var name = $('#name').val();
     var email = $('#email').val();
