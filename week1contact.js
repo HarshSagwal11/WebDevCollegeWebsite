@@ -1,31 +1,33 @@
 // form validation
-$(document).ready (function () {
+$(document).ready(function () {
+  $("#contactForm").submit(function (e) {
+    e.preventDefault();
 
-    $('submit').click(function (e) {
-        e.preventDefault();
-        validateForm();
-    });
-function validateForm() {
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var subject = $('#subject').val();
-    var applied = $('#applied').val();
-    var message = $('#message').val();
+    function validateForm() {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val();
+      var applied = $("#applied").val();
+      var message = $("#message").val();
 
-
-    if (name === '' || email === '' || mobile === '' || password1 === '' || password2 === '') {
-        alert('Please fill in all fields');
+      if (
+        name === "" ||
+        email === "" ||
+        mobile === "" ||
+        password1 === "" ||
+        password2 === ""
+      ) {
+        alert("Please fill in all fields");
         return;
+      }
+
+      $("#name").val("");
+      $("#Email").val("");
+      $("#subject").val("");
+      $("#applied").val("");
+      $("#message").val("");
+
+      alert("SignedUp Successfully!");
     }
-
-
-
-    $('#name').val('');
-    $('#Email').val('');
-    $('#subject').val('');
-    $('#applied').val('');
-    $('#message').val('');
-
-    alert('SignedUp Successfully!');
-}
-  
+  });
+});
