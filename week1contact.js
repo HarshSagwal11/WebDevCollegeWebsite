@@ -1,4 +1,5 @@
 // form validation
+
 function validateForm() {
     var name = $('#name').val();
     var email = $('#email').val();
